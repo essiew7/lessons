@@ -1,0 +1,7 @@
+a = (input("Введите имена пользователей через пробел : "))
+a = a.split()
+if len(a) == 0: print("No one like this.")
+if len(a) == 1: print(a[0],"like this.")
+if len(a) == 2: print(a[0],"and",a[1],"like this.")
+elif len(a) == 3: print(a[0],',',a[1],"and",a[2],"like this")
+else: print(a[0],",",a[1],"and",len(a)-2,"others like this")
